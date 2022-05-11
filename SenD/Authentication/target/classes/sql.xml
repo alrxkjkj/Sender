@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqls>
+    <sql id="LOGIN_INQUIRE">
+        SELECT password FROM user WHERE name=?;
+        <!-- 登陆查询用户名和密码-->
+    </sql>
+    <sql id="zc">
+        insert into table_user(username,password,zctime) values (?,?,?);
+    </sql>
+</sqls>

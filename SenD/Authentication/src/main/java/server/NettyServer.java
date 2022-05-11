@@ -3,6 +3,7 @@ package server;
 import config.PropertiesStore;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -25,7 +26,7 @@ public class NettyServer {
                         .childHandler(new ChannelInitializer<SocketChannel>() {
                             @Override
                             protected void initChannel(SocketChannel socketChannel) throws Exception {
-                                //
+
                             }
                         });
             ChannelFuture server = serverBootstrap.bind(

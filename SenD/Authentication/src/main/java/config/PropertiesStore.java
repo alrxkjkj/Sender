@@ -1,6 +1,6 @@
 package config;
 
-import utils.druidutil.DruidRead;
+import utils.druid.DruidRead;
 
 import java.io.*;
 import java.util.Properties;
